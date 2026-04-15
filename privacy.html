@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Glitch</title>
+<style>
+  :root { --bg:#080810; --surface:#0f0f18; --border:rgba(255,255,255,0.07); --accent:#c8f542; --text:#eeeef5; --muted:#9a9ab0; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; line-height:1.7; padding:0; }
+  nav { background:rgba(8,8,16,0.9); border-bottom:1px solid var(--border); padding:18px 48px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; backdrop-filter:blur(20px); }
+  .logo { font-size:20px; font-weight:700; letter-spacing:1px; color:var(--text); }
+  .logo span { color:var(--accent); }
+  .container { max-width:760px; margin:0 auto; padding:60px 24px 100px; }
+  h1 { font-size:36px; font-weight:700; margin-bottom:8px; }
+  .updated { color:var(--muted); font-size:14px; margin-bottom:48px; }
+  h2 { font-size:18px; font-weight:600; color:var(--accent); margin:36px 0 12px; }
+  p { color:var(--muted); margin-bottom:16px; }
+  ul { color:var(--muted); padding-left:24px; margin-bottom:16px; }
+  li { margin-bottom:8px; }
+  a { color:var(--accent); text-decoration:none; }
+  strong { color:var(--text); }
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">GL<span>ITCH</span></div>
+</nav>
+<div class="container">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: April 3, 2026</p>
+
+  <p>Glitch ("we," "our," or "us") is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your information when you use the Glitch mobile application.</p>
+
+  <h2>Information We Collect</h2>
+  <p>We collect information you provide directly:</p>
+  <ul>
+    <li><strong>Account data</strong> — email address and display name when you register</li>
+    <li><strong>Health & fitness data</strong> — weight logs, workout sessions, nutrition logs, progress photos, step counts, and macro targets you enter</li>
+    <li><strong>Profile data</strong> — age, sex, height, goals, activity level, and fitness experience level</li>
+    <li><strong>Apple Health data</strong> — if you grant permission, we read steps, active calories, body weight, and sleep data from Apple HealthKit</li>
+  </ul>
+
+  <h2>How We Use Your Information</h2>
+  <ul>
+    <li>To provide personalized workout programs, nutrition tracking, and AI coaching</li>
+    <li>To calculate your TDEE and recommended macro targets</li>
+    <li>To track your progress over time (weight, workouts, nutrition)</li>
+    <li>To send workout and meal reminder notifications (only if you enable them)</li>
+    <li>To improve the app using aggregated, anonymized analytics</li>
+  </ul>
+
+  <h2>Data Storage</h2>
+  <p>Your data is stored securely using <strong>Supabase</strong> (PostgreSQL with row-level security). Progress photos are stored in Supabase Storage. All data is encrypted in transit via HTTPS.</p>
+
+  <h2>Apple HealthKit</h2>
+  <p>Glitch requests read access to Apple HealthKit data (steps, active calories, body mass, sleep analysis) solely to display your health metrics within the app and to log weight entries. We do not share HealthKit data with third parties. HealthKit data is never used for advertising.</p>
+
+  <h2>Third-Party Services</h2>
+  <ul>
+    <li><strong>Anthropic Claude</strong> — powers the AI coach; your messages are processed to generate responses and are not stored by Anthropic beyond their standard data practices</li>
+    <li><strong>RevenueCat</strong> — manages in-app subscriptions; see their <a href="https://www.revenuecat.com/privacy">privacy policy</a></li>
+    <li><strong>PostHog</strong> — anonymized analytics (events like "workout completed", "food logged"); no personally identifiable information is sent</li>
+    <li><strong>Open Food Facts</strong> — barcode and food search lookups; no personal data is sent</li>
+  </ul>
+
+  <h2>Data Sharing</h2>
+  <p>We do not sell your personal data. We do not share your health or fitness data with advertisers. We may share anonymized, aggregated data for research purposes.</p>
+
+  <h2>Data Retention & Deletion</h2>
+  <p>Your data is retained as long as your account is active. To delete your account and all associated data, contact us at <a href="mailto:glitch@hungryandmotivated.com">glitch@hungryandmotivated.com</a>. We will process deletion requests within 30 days.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>Glitch is not intended for users under 13 years of age. We do not knowingly collect data from children under 13.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this policy periodically. We will notify you of significant changes via the app or email.</p>
+
+  <h2>Contact Us</h2>
+  <p>For privacy-related questions or data deletion requests: <a href="mailto:glitch@hungryandmotivated.com">glitch@hungryandmotivated.com</a></p>
+</div>
+</body>
+</html>
+
