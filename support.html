@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — Glitch</title>
+<style>
+  :root { --bg:#080810; --surface:#0f0f18; --border:rgba(255,255,255,0.07); --accent:#c8f542; --text:#eeeef5; --muted:#9a9ab0; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; line-height:1.7; padding:0; }
+  nav { background:rgba(8,8,16,0.9); border-bottom:1px solid var(--border); padding:18px 48px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; backdrop-filter:blur(20px); }
+  .logo { font-size:20px; font-weight:700; letter-spacing:1px; color:var(--text); }
+  .logo span { color:var(--accent); }
+  .nav-links { display:flex; gap:24px; }
+  .nav-links a { color:var(--muted); text-decoration:none; font-size:14px; transition:color 0.2s; }
+  .nav-links a:hover { color:var(--text); }
+  .container { max-width:760px; margin:0 auto; padding:60px 24px 100px; }
+  h1 { font-size:36px; font-weight:700; margin-bottom:8px; }
+  .tagline { color:var(--muted); font-size:15px; margin-bottom:48px; }
+  h2 { font-size:18px; font-weight:600; color:var(--accent); margin:40px 0 12px; }
+  p { color:var(--muted); margin-bottom:16px; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  strong { color:var(--text); }
+  .contact-card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:28px; margin:24px 0 40px; }
+  .contact-card .row { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+  .contact-card .row:last-child { margin-bottom:0; }
+  .contact-card .label { color:var(--muted); font-size:14px; }
+  .contact-card .value { color:var(--text); font-weight:500; }
+  .faq { background:var(--surface); border:1px solid var(--border); border-radius:12px; margin-bottom:12px; overflow:hidden; }
+  .faq summary { padding:18px 24px; cursor:pointer; font-weight:500; list-style:none; display:flex; justify-content:space-between; align-items:center; color:var(--text); }
+  .faq summary::-webkit-details-marker { display:none; }
+  .faq summary::after { content:'+'; color:var(--accent); font-size:20px; transition:transform 0.2s; }
+  .faq[open] summary::after { transform:rotate(45deg); }
+  .faq-body { padding:0 24px 20px; color:var(--muted); font-size:15px; }
+  footer { border-top:1px solid var(--border); padding:32px 24px; text-align:center; color:var(--muted); font-size:13px; }
+  footer a { margin:0 12px; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">GL<span>ITCH</span></div>
+  <div class="nav-links">
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+    <a href="/support.html">Support</a>
+  </div>
+</nav>
+<div class="container">
+  <h1>Support</h1>
+  <p class="tagline">We typically respond within 24 hours, Monday–Friday.</p>
+
+  <div class="contact-card">
+    <div class="row">
+      <span class="label">Email</span>
+      <span class="value"><a href="mailto:glitch@hungryandmotivated.com">glitch@hungryandmotivated.com</a></span>
+    </div>
+    <div class="row">
+      <span class="label">Response time</span>
+      <span class="value">Within 24 hours (weekdays)</span>
+    </div>
+  </div>
+
+  <h2>Common Questions</h2>
+
+  <details class="faq">
+    <summary>How do I cancel or manage my subscription?</summary>
+    <div class="faq-body">
+      Subscriptions are managed through Apple. Open the <strong>Settings</strong> app on your iPhone → tap your name at the top → <strong>Subscriptions</strong> → <strong>Glitch</strong>. From there you can cancel, change plan, or view renewal date. Cancelling stops future charges; you keep Pro access through the end of the current billing period.
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>I'm getting "Not authenticated" when trying to delete my account.</summary>
+    <div class="faq-body">
+      This usually means your login session has expired. Sign out, sign back in, then try <strong>Settings → Delete Account</strong> again. If it still fails, email us and we'll delete it server-side within 24 hours.
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>My Apple Health data isn't syncing.</summary>
+    <div class="faq-body">
+      Open the <strong>Health</strong> app on your iPhone → tap your profile icon → <strong>Apps and Services</strong> → <strong>Glitch</strong> → make sure <em>Steps</em>, <em>Active Energy</em>, <em>Weight</em>, and <em>Sleep Analysis</em> are all enabled. Then restart Glitch.
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>How do I restore my purchase on a new device?</summary>
+    <div class="faq-body">
+      Sign in with the same account and Apple ID you used originally, then open <strong>Settings → Manage Subscription → Restore Purchases</strong>. Your Pro access should activate within a few seconds.
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>Why did the app crash or freeze?</summary>
+    <div class="faq-body">
+      Force-quit and reopen Glitch. If it keeps happening, make sure you're on the latest version via the App Store. Still broken? Email us with your iPhone model, iOS version, and a quick description of what you were doing when it crashed.
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>How do I export or delete my data?</summary>
+    <div class="faq-body">
+      In the app: <strong>Settings → Export My Data</strong> will email you a full export. <strong>Settings → Delete Account</strong> permanently removes every log, photo, program, and credential. Both options are free and instant.
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>Can I use Glitch on Android?</summary>
+    <div class="faq-body">
+      Not yet. iOS only for now. Android is on the roadmap — join the waitlist by emailing us.
+    </div>
+  </details>
+
+  <h2>Bug Reports & Feature Requests</h2>
+  <p>Email <a href="mailto:glitch@hungryandmotivated.com">glitch@hungryandmotivated.com</a> with "Bug" or "Feature" in the subject line. Screenshots help. We read every message.</p>
+</div>
+<footer>
+  <a href="/privacy.html">Privacy Policy</a>
+  <a href="/terms.html">Terms of Use</a>
+  <a href="/support.html">Support</a>
+</footer>
+</body>
+</html>
